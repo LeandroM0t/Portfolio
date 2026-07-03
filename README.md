@@ -22,3 +22,13 @@ Features
 ✅ SEO-friendly HTML
 ✅ Fast loading
 ✅ Clean, well-commented code
+
+Technologies
+HTML5
+CSS3
+JavaScript (ES6)
+Bootstrap 5 or Tailwind CSS
+AOS (Animate on Scroll)
+Typed.js
+Font Awesome
+EmailJS
