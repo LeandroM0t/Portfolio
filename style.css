@@ -24,6 +24,77 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.glass-navbar {
+  width: 120%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+}
+
+.glass-navbar:hover {
+  transform: translateY(20px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #eafcff;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--main-color);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--main-color);
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.9);
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
 section {
